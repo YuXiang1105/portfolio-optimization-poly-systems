@@ -21,14 +21,14 @@ To deactivate venv
 deactivate
 ``````
 3. Install dependencies
-
+``````
 pip install -r requirements.txt
 ``````
 
 4. Run Jupyter
 ``````
 jupyter lab
-
+``````
 ## How to execute main
 Instead of `python3 main.py` use
 ``````

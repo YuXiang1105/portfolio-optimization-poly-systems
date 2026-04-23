@@ -3,81 +3,55 @@
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-
 \usepackage{amsmath, amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{geometry}
+\usepackage{titlesec}
+
+\titleformat{\chapter}
+{\normalfont\huge\bfseries}
+{\thechapter.}{1em}{}
 
 \geometry{margin=2.5cm}
 
-\title{Mini Trabajo de Fin de Grado}
-\author{Tu Nombre}
-\date{\today}
+\title{Modelos con sistemas de ecuaciones polinómicas - Modelo de Markowitz}{
+    \author{
+        Yu Xiang Yang Xu \and
+        Álvaro Vicente Bonilla
+    }
+    \date{\today}
+    }
+    \begin{document}
 
-\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
 
-\begin{titlepage}
-    \centering
-    \vspace*{2cm}
+    \chapter{Introducción}
+    En este trabajo nos centraremos en uno de los aspectos más importantes de la teoría financiera moderna, el cual es el Modelo de Markowitz, realizado en 1952 y publicado en el artículo \textit{Portfolio Selection} en el Journal of Finance. Nos permite saber cómo combinar activos de la forma más eficiente posible, equilibrando la rentabilidad esperada y el riesgo del activo. \\
 
-    {\Huge \textbf{Mini TFG}}
+    Este artículo es considerado actualmente como una de las bases de la mayoría de teorías de portfolios, ya que realiza definiciones que consideramos esenciales. Entre ellos, la definición del riesgo como varianza y la idea de que no basta con analizar la rentabilidad esperada de un activo de manera aislada, sino que es necesario estudiar la correlación entre los activos que componen la cartera. Gracias a este enfoque, fue posible modelar matemáticamente por primera vez cuál es la mejor combinación de activos para un inversor racional.\\
 
-    \vspace{1.5cm}
+    Este modelizaje se puede usar hoy en día; incluso con la aparición de nuevos tipos de activos, como por ejemplo ETFs y criptomonedas, ya tiene en cuenta aspectos generales, como la rentabilidad y el riesgo.\\ 
 
-    {\Large Tu Nombre}
+    Además de lo antes mencionado, también realizaremos un razonamiento de lo que significa tener una cartera eficiente y por qué la diversificación es tan importante.   \\
 
-    \vfill
+    Por otro lado, también realizaremos una comparativa de las carteras más eficientes, eligiendo activos modernos y buscando lo que llamaremos la Frontera Eficiente, que es el conjunto de carteras que maximizan la rentabilidad esperada respecto al riesgo (representable normalmente como una curva o recta).\\
 
-    {\large Universidad}
+    También observaremos los inconvenientes de este modelaje Por ejemplo, cómo el inversor tiene que tener claros los tipos de activos en los que quiere invertir o que el inversor tiene que tener un punto de vista totalmente analítico, cosa que no suele ser lo más habitual.
 
-    {\large \today}
-\end{titlepage}
+    \chapter{conocimientos previos}
 
-\tableofcontents
-\newpage
 
-\chapter{Introducción}
+    \chapter{Desarrollo}
 
-Texto de introducción.
+    \chapter{Resultados}
 
-\section{Objetivos}
+    \chapter{Conclusiones}
 
-Objetivos del trabajo.
+    \begin{thebibliography}{9}
+        \bibitem{ref1} Autor, \textit{Título}, Año.
+    \end{thebibliography}
 
-\section{Motivación}
-
-Motivación del proyecto.
-
-\chapter{Estado del arte}
-
-Revisión de trabajos previos.
-
-\chapter{Desarrollo}
-
-\section{Metodología}
-
-Descripción del enfoque.
-
-\section{Implementación}
-
-\[
-    f(x) = ax^2 + bx + c
-\]
-
-\chapter{Resultados}
-
-Resultados obtenidos.
-
-\chapter{Conclusiones}
-
-Conclusiones del trabajo.
-
-\begin{thebibliography}{9}
-
-    \bibitem{ref1}
-        Autor, \textit{Título}, Año.
-
-\end{thebibliography}
-
-\end{document}
+    \end{document}
